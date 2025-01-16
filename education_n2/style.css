@@ -1,0 +1,40 @@
+body {
+  color: #fff;
+}
+
+.container {
+  width: 750px;
+  height: 127px;
+  background-color: rgb(67, 65, 65);
+}
+
+.container span {
+  font-size: 24px;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(199, 48, 48);
+}
+
+.color {
+  color: rgb(255, 125, 227);
+}
+
+.wrapper {
+  background-color: rgb(161, 110, 209);
+  width: 300px;
+  height: auto;
+}
+
+.wrapper p {
+  width: 290px;
+  color: black;
+  font-size: 20px;
+}
+
+.wrapper span {
+  background-color: blueviolet;
+}
+
