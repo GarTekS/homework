@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  top: 200px;
+  left: 470px;
+  width: 50%;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 10px 0px 0px 10px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.block {
+  display: inline-block;
+  width: 200px;
+  background-color: rgb(201, 167, 142);
+  text-align: center;
+  padding: 5px;
+  margin: 4px;
+  border-radius: 20px;
+  box-shadow: inset 2px 2px 9.5px 0px ;
+}
