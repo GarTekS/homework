@@ -1,0 +1,224 @@
+.header {
+  position: relative;
+  background-color: #EBFFE4;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 118px;
+}
+
+.header__logo {
+  z-index: 11;
+}
+
+.header__nav {
+  z-index: 10;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item:first-child {
+  opacity: 1;
+}
+
+.nav__item {
+  font-weight: 500;
+  opacity: 0.6;
+  margin-right: 30px;
+  transition: all .4s;
+  z-index: 10;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__item:hover {
+  opacity: 1;
+}
+
+.burger-icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+}
+
+.burger-icon span, .burger-icon span::before,
+.burger-icon span::after {
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: #000;
+  transition: all .4s;
+}
+
+.burger-icon span {
+  display: block;
+  position: relative;
+}
+
+.burger-icon span::before, .burger-icon span::after {
+  content: '';
+  position: absolute;
+}
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background-color: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.header__button {
+  display: flex;
+  background-color: transparent;
+  width: 40px;
+  height: 28px;
+  align-items: center;
+}
+
+.header__button line {
+  stroke: #000;
+}
+
+.header__decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* ========== */
+
+.hero__content {
+  max-width: 400px;
+  width: 100%;
+}
+
+.hero__subtitle {
+  display: flex;
+  gap: 15px;
+  color: var(--accent-text);
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.hero__title {
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 26px;
+}
+
+.hero__text {
+  margin-bottom: 11px;
+}
+
+.hero__text, .hero__subtext {
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.hero__subtext a {
+  color: var(--accent-text);
+  font-weight: 700;
+}
+
+.hero__prices {
+  display: flex;
+  align-items: end;
+  color: var(--accent-text);
+  margin-top: 15px;
+  gap: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 37px;
+}
+
+.hero__price-action {
+  font-size: 31px;
+}
+
+.hero__price {
+  color: #87D16D;
+  font-size: 22px;
+  text-decoration: line-through;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 84px;
+}
+
+
+.hero__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__stats {
+  display: flex;
+  text-align: center;
+  gap: 68px;
+}
+.hero__stats-customers span, .hero__stats-review span {
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent-text);
+}
+
+.hero__stats-customers p, .hero__stats-review p {
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.hero__shoes {
+  display: flex;
+  gap: 35px;
+  z-index: 11;
+}
+
+.hero__shoe:first-child {
+  border-color: #B6E247;
+  background-color: #B6E247;
+}
+
+.hero__shoe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #BEE761;
+  background-color: #F5F5F5;
+  width: 115px;
+  height: 115px;
+}

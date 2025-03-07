@@ -1,0 +1,39 @@
+(function () {
+
+  const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    loop: TextTrackCue,
+    
+    pagination: {
+      el: '.reviews__paginaton'
+    },
+
+    navigation: {
+      nextEl: '.reviews__control-last',
+      prevEl: '.reviews__prev'
+    }
+  })
+
+  // навигация-хедера
+
+  document.addEventListener('click', burgerInit)
+
+  function burgerInit(e) {
+
+    const burgerIcon = e.target.closest('.burger-icon')
+    const burgerNavLink = e.target.closest('.nav__link')
+
+    if (!burgerIcon && !burgerNavLink) return
+    if (document.documentElement.clientWidth > 650) return
+    if (burgerIcon) {
+      e.preventDefault()
+    }
+
+    if (!document.body.classList.contains('body--opened-menu')) {
+      document.body.classList.add('body--opened-menu')
+    } else {
+      document.body.classList.remove('body--opened-menu')
+    }
+  }
+
+})()
